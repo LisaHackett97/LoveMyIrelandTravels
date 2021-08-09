@@ -5,7 +5,11 @@
 :root {
   --main-text-color: #34252f;
   --color1: #9bd1e5;
-  
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,15 +18,67 @@
   /* scroll-behavior: smooth; */
 }
 
-h1{
+
+h1 {
+  color: var(--main-text-color);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.scroll-1 {
+  width: 90%;
+            height: 600px;
+            background: url(/assets/images/crough-patrick-clew-bay.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+}
+
+.scroll-2 {
+  width: 90%;
+  height: 600px;
+  background: url(/assets/images/glendalough.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+ 
+}
+
+.scroll-3 {
+  width: 90%;
+  height: 600px;
+  background: url(/assets/images/connemara-abbey.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.scroll-4 {
+  width: 90%;
+  height: 600px;
+  background: url(/assets/images/ashford-devils-glen.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.scroll-1 h2{
+  margin: auto;
+ 
+  color: var(--main-text-color);
+  background-color: var(--color1);
+ 
+ 
+  text-align: center;
+  
+  }
+
+  .home-img-1 p{
     color: var(--main-text-color);
-    font-family: 'Exo 2', sans-serif;
-}
-.home-images {
-    display:grid
-}
+    background-color: var(--color1);
+  }
+
+
 
 /* set temp color to txt within divs */
 div {
-    color:var(--color1)
+  color: var(--color1);
 }

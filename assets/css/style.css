@@ -68,30 +68,39 @@ h1 {
 /* set styling on title on each image */
 .scroll-1 h2, .scroll-2 h2, .scroll-3 h2, .scroll-4 h2{
   padding: 10px;
-  color: var(--color1);
+ 
   text-align: center;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 900;
-  background-color: #34252f69;
+  color: var(--main-text-color);
+    background-color: #9bd1e569;
+    font-family: 'Poppins', sans-serif;
  
   }
 
-  .scroll-1 h2:hover, .scroll-2 h2:hover, .scroll-3 h2:hover, .scroll-4 h2:hover{
+  /* .scroll-1 h2:hover, .scroll-2 h2:hover, .scroll-3 h2:hover, .scroll-4 h2:hover{
     padding: 10px;
     color: var(--main-text-color);
     background-color: #9bd1e569;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
    
-    }
+    } */
 
-  .home-img-1 p{
+  .img-details{
     color: var(--main-text-color);
     background-color: var(--color1);
-  }
+    padding:30px;
+    font-size: 1rem;
+    }
+header {
+  background-color: #9bd1e511;
+ 
+}
 
-
-
+.nav-link{
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 20px;
+}
 /* set temp color to txt within divs */
 div {
   color: var(--color1);

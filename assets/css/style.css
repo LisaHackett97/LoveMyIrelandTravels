@@ -23,9 +23,13 @@ h1 {
   color: var(--main-text-color);
   font-family: 'Exo 2', sans-serif;
 }
+.container {
+  display: grid;
+}
 
+/* geeksforGeeks tutorial for help */
 .scroll-1 {
-  width: 90%;
+  width: 100%;
             height: 600px;
             background: url(/assets/images/crough-patrick-clew-bay.jpg);
             background-size: 100% 100%;
@@ -35,7 +39,7 @@ h1 {
 }
 
 .scroll-2 {
-  width: 90%;
+  width: 100%;
   height: 600px;
   background: url(/assets/images/glendalough.jpg);
   background-size: 100% 100%;
@@ -44,7 +48,7 @@ h1 {
 }
 
 .scroll-3 {
-  width: 90%;
+  width: 100%;
   height: 600px;
   background: url(/assets/images/connemara-abbey.jpg);
   background-size: 100% 100%;
@@ -53,23 +57,33 @@ h1 {
 }
 
 .scroll-4 {
-  width: 90%;
+  width: 100%;
   height: 600px;
   background: url(/assets/images/ashford-devils-glen.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-.scroll-1 h2{
-  margin: auto;
- 
-  color: var(--main-text-color);
-  background-color: var(--color1);
- 
- 
+
+/* set styling on title on each image */
+.scroll-1 h2, .scroll-2 h2, .scroll-3 h2, .scroll-4 h2{
+  padding: 10px;
+  color: var(--color1);
   text-align: center;
-  
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  background-color: #34252f69;
+ 
   }
+
+  .scroll-1 h2:hover, .scroll-2 h2:hover, .scroll-3 h2:hover, .scroll-4 h2:hover{
+    padding: 10px;
+    color: var(--main-text-color);
+    background-color: #9bd1e569;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+   
+    }
 
   .home-img-1 p{
     color: var(--main-text-color);

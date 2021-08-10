@@ -5,6 +5,8 @@
 :root {
   --main-text-color: #34252f;
   --color1: #9bd1e5;
+  --color2:#157145;
+  --color3:#edbf85;
 
 }
 
@@ -15,18 +17,23 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /* scroll-behavior: smooth; */
+ 
 }
 
+body{
+  background-color: #15714567;
+}
 
 h1 {
   color: var(--main-text-color);
   font-family: 'Exo 2', sans-serif;
 }
+
 .container {
   display: grid;
 }
 
+/* images on home page set as background images in order for parallax type scrolling to work */
 /* geeksforGeeks tutorial for help */
 .scroll-1 {
   width: 100%;
@@ -35,6 +42,7 @@ h1 {
             background-size: 100% 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            position:relative;
 
 }
 
@@ -44,6 +52,7 @@ h1 {
   background: url(/assets/images/glendalough.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
+  position:relative;
  
 }
 
@@ -65,43 +74,60 @@ h1 {
   background-repeat: no-repeat;
 }
 
-/* set styling on title on each image */
-.scroll-1 h2, .scroll-2 h2, .scroll-3 h2, .scroll-4 h2{
-  padding: 10px;
- 
-  text-align: center;
-  color: var(--main-text-color);
-    background-color: #9bd1e569;
-    font-family: 'Poppins', sans-serif;
- 
-  }
 
-  /* .scroll-1 h2:hover, .scroll-2 h2:hover, .scroll-3 h2:hover, .scroll-4 h2:hover{
-    padding: 10px;
-    color: var(--main-text-color);
-    background-color: #9bd1e569;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-   
-    } */
-
+/* Styling of txt box for details on imgs. Use color 1 but more transparent */
   .img-details{
     color: var(--main-text-color);
-    background-color: var(--color1);
-    padding:30px;
+    background-color: #9bd1e54f;
+    padding:10px;
     font-size: 1rem;
+    width:100%;
     }
-header {
+
+  .image-title{
+  color: #157145;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+  padding:10px; 
+  }
+
+
+/*Styling and positioning to top of page,of main nav bar */
+.nav{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+	height: 60px;
+	top: 0;
   background-color: #9bd1e511;
- 
+  
 }
 
-.nav-link{
-  color: var(--main-text-color);
+/* Styling of nav bar links */
+.nav-link {
+  color: #34252f;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover{
+  color:var(--color3);
+}
+/* Syling of nav bar items so that they are inline, not stacking vertically */
+.nav-item{
+  display: inline-block;
+  margin: 0 30px;
+  justify-content: flex-end;
   text-decoration: none;
-  font-size: 20px;
+ 
+  
+
 }
 /* set temp color to txt within divs */
 div {
   color: var(--color1);
+  font-family: 'Poppins', sans-serif;
 }

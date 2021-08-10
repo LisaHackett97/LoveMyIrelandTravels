@@ -207,7 +207,9 @@ object-fit: cover;
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-    height: 1200px;
+    height: 1250px;
+    overflow: hidden;
+    
   }
   
   .column img {
@@ -222,7 +224,18 @@ object-fit: cover;
     .column {
       flex: 50%;
       max-width: 50%;
+    
+     
     }
+  
+
+    figcaption{
+      height: 25px;
+      color: #34252f;
+      padding:10px;
+    }
+
+     
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */

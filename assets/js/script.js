@@ -1,4 +1,10 @@
 // https://www.w3schools.com/Css/tryit.asp?filename=trycss_image_gallery_responsive
+
+// document.getElementById("thumb-img").addEventListener("click", myFunction);
+
+// document.getElementById("thumb-img").addEventListener("key", myFunction);
+
+
 function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");

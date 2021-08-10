@@ -145,9 +145,10 @@ div {
   position: absolute;
   height: 75vh;
   top:160px;
-   display: flex;
- 
+   display: flex; 
+   flex-direction: row;
 }
+
 
  .card img{
 width: 100%;
@@ -163,6 +164,7 @@ object-fit: cover;
   position: relative;
  
 }
+
 
 /* styling for transformed images when hovered */
 /* credit css-tricks card carousel for inspiration and help */
@@ -200,4 +202,13 @@ object-fit: cover;
   .card:hover ~ .title {
    display: block;
   }
+
+  /* hide cards on smaller screens, to be displayed on a new row */
+  .card-sm-2, .card-sm-3 {
+    display: none;
+  }
+
+
+
 }
+ 

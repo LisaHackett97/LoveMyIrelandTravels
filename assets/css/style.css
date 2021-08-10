@@ -146,7 +146,8 @@ div {
   height: 75vh;
   top:160px;
    display: flex; 
-   flex-direction: row;
+  
+
 }
 
 
@@ -194,21 +195,50 @@ object-fit: cover;
 }
 
 
-@media screen and (max-width: 768px) {
-  .title{
-    display: none;
+ @media screen and (max-width: 768px) {
+
+   .carousel-container{
+     display: none;
+   }
   }
 
-  .card:hover ~ .title {
-   display: block;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
-
-  /* hide cards on smaller screens, to be displayed on a new row */
-  .card-sm-2, .card-sm-3 {
-    display: none;
+  
+  /* styling and layout of images for smaller screens */
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
-
-
-
-}
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
  
+
+
+

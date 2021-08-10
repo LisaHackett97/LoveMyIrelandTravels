@@ -1,6 +1,7 @@
 This is a visual image site. Displaying images of area in Co wicklow and Connemara.
 Primary goal of the site for practice to set up responsive images and gallery’s that makes for a good user experience with good performance on the site. Focus is not specifically on the content but is on my own learning experiences.
-![Site-Mockup](readme-assets/mock-ups.png)
+![Site-Mockup](readme-assets/mock-ups.PNG)
+
 
 ## **To open any links in a new tab, please press Ctrl + click**
 
@@ -98,7 +99,7 @@ Contains the following:
 
 ### Navigation Menu
 
-- Contains links to the Carousel Page and Home PAge
+- Contains links to the Carousel Page and Home Page
 
 ### Carousel/Gallery Page
 
@@ -178,11 +179,6 @@ Validation of code was re-checked each time a change was made, after the main de
 - Expected: Scroll through images, imgs fixed until next displayed
 - Testing: viewing page and scrolling on different screen sizes
 - Result: No issues worked as expected
-
-
-#### Learn More-Page
-Expected: 
-Tested by
 
 ##### Feature: NavBar
 
@@ -283,7 +279,7 @@ To Clone, follow the below steps:
 6. Use command git clone and the copied URL
 7. Press enter
 
-Select this file for screenshot [readme-assets/clone-repo.PNG]
+
 
 Forking the repository:
 

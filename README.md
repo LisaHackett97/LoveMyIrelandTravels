@@ -1,6 +1,6 @@
 This is a visual image site. Displaying images of area in Co wicklow and Connemara.
 Primary goal of the site for practice to set up responsive images and gallery’s that makes for a good user experience with good performance on the site. Focus is not specifically on the content but is on my own learning experiences.
-
+![Site-Mockup](readme-assets/mock-ups.png)
 
 ## **To open any links in a new tab, please press Ctrl + click**
 
@@ -50,11 +50,13 @@ As a prospective user, I want to
 
 
 ### Strategy and scope
-
+Looking at both strategy and scope of the project, I referred back to the user stories, which helped in planning out the project.
+Colours and interesting info for my site, I listed out the opportunities/problems and how each of these might be addressed. And for the scope plane, I planned out the content and functional requirements.
+As this project was a personal one to aid my learning, I focused on the objectives, of learning and planning out image layouts
 
 ### Structure of the website
 
-
+The structure of the site is designed so that on landing on the site, the user can easily scroll through some images or alternatively use the nav bar included to navigate to the second page to view more images.
 
 
 ### Wireframes
@@ -62,14 +64,14 @@ As a prospective user, I want to
 
 These were built using balsamiq.
 
-
+[Wireframe Mobile](readme-assets/images-site-wireframe.pdf)
 
 ### Surface
 
 
 #### Colors
 
-
+![Final Colours Used](readme-assets/colors.PNG)
 
 
 #### Typography
@@ -77,6 +79,7 @@ These were built using balsamiq.
 I planned to use Exo2 and Poppins fonts. This did not change during development as the fonts suited the site from a visual perspective.
 
 #### Images
+All images used on the site are my own. I wanted to use images of my local area and of holidays in Ireland I have been on
 
 
 
@@ -93,16 +96,17 @@ The site consists of
 Contains the following:
 
 
-
 ### Navigation Menu
 
-- Contains links to:
+- Contains links to the Carousel Page and Home PAge
 
 ### Carousel/Gallery Page
 
 Contains the following:
 
 - Navigation menu
+- Medium Screens: Images which are enlarged when the user hovers over them
+- for smaller screens, I needed to change layout to columns and add figcaptions, as the layout for larger screens did not suit mobile size
 
 
 ### Future Features
@@ -133,7 +137,7 @@ Contains the following:
   - validator.w3.org
   - jigsaw.w3.org/css-validator
 
-- favicons.io
+
 
 [Back to table of contents](#table-of-contents)
 
@@ -160,32 +164,20 @@ Validation of code was re-checked each time a change was made, after the main de
 
 ### Functionality Testing
 
-
-
 #### Landing-Page
-
-##### Feature: Landing Page
-Expected: 
-Tested by
-
-
-
 
 
 ##### Feature: Nav Bar
-Expected: 
-Tested by
+- Expected: Displayed at top of page even when user scrolls down. Home page and clicking on carousel link, brings user to 2nd page
+- Tested by: viewing page on different screen sizes and clicking on links.
+- Result: No issues worked as expected
 
 
-##### Feature: Heading
+##### Feature: Images, with parrallax effect on scroll
 
-- Expected: 
-- Testing: 
-- Result: 
-
-
-
-
+- Expected: Scroll through images, imgs fixed until next displayed
+- Testing: viewing page and scrolling on different screen sizes
+- Result: No issues worked as expected
 
 
 #### Learn More-Page
@@ -193,49 +185,32 @@ Expected:
 Tested by
 
 ##### Feature: NavBar
-Expected: 
-Tested by
+
+- Expected: Displayed at top of page even when user scrolls down. Home page and clicking on carousel link, brings user to home page
+- Tested by: viewing page on different screen sizes and clicking on links.
+- Result: No issues worked as expected
 
 
+##### Feature: Gallery Carousel on large screens
 
+- Expected: Images shown side by side but not fully visible until user hovers. At which point, image will move slightly and enlarge for full viewing
+- Tested by: viewing carousel  and hovering over images.
+- Result: No issues worked as expected
 
-##### Feature: Gallery Carousel
-Expected: 
-Tested by
+##### Feature: Gallery Carousel on screens under 768px:
+- Expected: Images shown in 2 columns with text beneath
+- Tested by: viewing carousel on different device sizes and scrolling through the page.
+- Result: No issues worked as expected
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-##### background image
-
-
-
-##### Feature: 
-
+##### Feature: Gallery Carousel on screens under 600px:
+- Expected: Images shown in 1 columns with text beneath
+- Tested by: viewing carousel on different device sizes and scrolling through the page.
+- Result: No issues worked as expected
 
 
 ### Compatibility Testing
 
-
-
-### User stories Testing
-
-#### As a prospective user, I want to
-
-
-
-
-#### As site owner I want to
+Tested on chrome. No issues.
 
 
 
@@ -243,7 +218,7 @@ Tested by
 
 ### Issues during development
 
-
+- I tried a number of different layouts, experimenting with bootstrap, flexbox and grid. Issues mainly arose due to my understanding of each of these. The aim of the project was to increase my knowledge and understanding, I would try to understand why each wouldn't work as expected, and then decided on final layouts.
 
 [Back to table of contents](#table-of-contents)
 
@@ -253,23 +228,27 @@ Tested by
     - This was corrected. Images are set as background images to achieve the parallax effect. The file path is set within the css folder. Removed assets/ and replaced with ..
     - This corrected the issue
 - Link to more photos page, not working on love site on different screen sizes. Retyped links. And retested. Working now
--
+
+- Validation errors on carousel.html
+  - Three stray figure end tag: Removed tags and retested. No issues
+  - Figure element not allowed as a child of a div. Replaced these divs with sections. Retested. No issues.
+
+  - Figcaption not showing under one image. Tried increasing height of columns. Resolved for one image, not for the other. Image will need to be resized.
+    - Resolved: Image resizing did not work. Increased height of column and added padding bottom to the figure element for image "glen of the downs"
 
 ### Performance and accessibility Testing
 
 #### Lighthouse testing
 
-- Home Page:
-
 
 #### Accessibility
 
 
-
-
 ### Code Validation
 
-
+- css code: no Errors
+- index.html: no Errors
+- carousel.html: Errors documented in bugs section. Resolved. Warnings left as section has no heading elements.
 
 
 

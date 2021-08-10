@@ -210,8 +210,8 @@ object-fit: cover;
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-    height: 1250px;
-    overflow: hidden;
+    height: 1300px;
+    /* overflow: hidden; */
     
   }
   
@@ -227,15 +227,21 @@ object-fit: cover;
     .column {
       flex: 50%;
       max-width: 50%;
+     
     
      
+    }
+
+    #glen-img {
+      padding-bottom: 5px;
     }
   
 
     figcaption{
-      height: 25px;
+      height: 20px;
       color: #34252f;
       padding:10px;
+      margin-left: 5px;
     }
 
      

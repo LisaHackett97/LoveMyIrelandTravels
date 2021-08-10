@@ -144,10 +144,10 @@ div {
 .carousel-container{
   position: absolute;
   height: 75vh;
-  width:75vw;
+  /* width:75vw; */
   top:160px;
    display: flex;
-   width:100vw;
+   /* width:100vw; */
 }
 
  .card img{

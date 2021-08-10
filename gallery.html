@@ -12,11 +12,13 @@
     <title>LoveIreland LoveWicklow</title>
 </head>
 
+<body>
+    
 
 <nav class="nav">
     <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="gallery.html">More Photos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">More Photos</a></li>
     </ul>
 </nav>
 
@@ -25,7 +27,7 @@
 </section>
 
 <!-- /*Credit for carousel https://codepen.io/claudiulazar/pen/OdvVOo */ -->
-<div class="container">
+<!-- <div class="container">
     <div class="carousel">
       <div class="carousel__face"><span>This is something</span></div>
       <div class="carousel__face"><span>Very special</span></div>
@@ -37,4 +39,62 @@
       <div class="carousel__face"><span>How IT Works</span></div>
       <div class="carousel__face"><span>Woow</span></div>
     </div>
+  </div> -->
+<!-- https://bootsnipp.com/snippets/0eGyj -->
+<!-- <div class="container"> -->
+
+
+
+<!-- </div> -->
+<!-- https://www.w3schools.com/Css/tryit.asp?filename=trycss_image_gallery_responsive -->
+<!-- The expanding image container -->
+<div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
   </div>
+
+  <div class="row">
+    <div class="column">
+        <img class="thumb-img" src="assets/images/g-connemara-killary-harbour.jpg" alt="Killary Harbour, connemara" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/g-glen-of-downs.jpg" alt="Glen of the Downs" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/g-greystones-south-beach.jpg" alt="South Beach" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/g-greystones-sunset.jpg" alt="Sunset, Greystones" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/greystones-cove-sunrise.jpg" alt="Sunrise at the Cove" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/greystones-woods.jpg" alt="Woods near Greystones" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/greystones-cove.jpg" alt="The Cove, Greystones" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/greystones-storm-sea.jpg" alt="Greystones Stormy Sea" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/connemara1.jpg" alt="Connemara" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img class="thumb-img" src="assets/images/greystones-sea.jpg" alt="Sea at greystones" onclick="myFunction(this);">
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+</body>
+</html>

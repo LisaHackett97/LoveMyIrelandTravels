@@ -56,13 +56,10 @@ As a prospective user, I want to
 
 
 
-[Structure Plan](readme-assets/structure-plane-plan.pdf)
 
 ### Wireframes
 
-[Wireframe Mobile](readme-assets/spacegame-wireframe-mobile.pdf)
-[Wireframe Tablet](readme-assets/spacegame-wireframe-tablet.pdf)
-[Wireframe Desktop](readme-assets/spacegame-wireframe-desktop.pddf)
+
 These were built using balsamiq.
 
 
@@ -108,19 +105,10 @@ Contains the following:
 - Navigation menu
 
 
-
-
-### 404 page
-
-Contains the following:-
-
-- Message for user if they get the 404 error.
-- Link back to the landing page
-- Background image with animations to slide in the text.
-
-### Favicon 
-
 ### Future Features
+- favicon
+- 404 page
+- pop up boves with more info on the locations in the images.
 
 
 [Back to table of contents](#table-of-contents)
@@ -177,14 +165,16 @@ Validation of code was re-checked each time a change was made, after the main de
 #### Landing-Page
 
 ##### Feature: Landing Page
-
+Expected: 
+Tested by
 
 
 
 
 
 ##### Feature: Nav Bar
-
+Expected: 
+Tested by
 
 
 ##### Feature: Heading
@@ -199,30 +189,32 @@ Validation of code was re-checked each time a change was made, after the main de
 
 
 #### Learn More-Page
-
+Expected: 
+Tested by
 
 ##### Feature: NavBar
-
+Expected: 
+Tested by
 
 
 
 
 ##### Feature: Gallery Carousel
-
-
-
-
-
-
-#### 404-page
-
-##### Text detail
-
-
-##### link to home page
-
 Expected: 
 Tested by
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##### background image
 
@@ -257,8 +249,10 @@ Tested by
 
 ### Bugs
 
-- Home pages images not displaying on live site
-- Link to more photos page, not working on love site on different screen sizes
+- Home pages images not displaying on live site. 
+    - This was corrected. Images are set as background images to achieve the parallax effect. The file path is set within the css folder. Removed assets/ and replaced with ..
+    - This corrected the issue
+- Link to more photos page, not working on love site on different screen sizes. Retyped links. And retested. Working now
 -
 
 ### Performance and accessibility Testing
@@ -279,7 +273,6 @@ Tested by
 
 
 
-[These are the final validation reports]
 
 [Back to table of contents](#table-of-contents)
 
@@ -324,7 +317,7 @@ GitHub docs link [Forking a repository](https://docs.github.com/en/desktop/contr
 ## Credits
 
 - Help with code for parallax scolling effect: Tutorial geeks for geeks.org
-- credit css-tricks card carousel for inspiration and help
+- credit css-tricks card carousel for inspiration and help (to add in link)
 
 ### Media
 
@@ -333,12 +326,12 @@ GitHub docs link [Forking a repository](https://docs.github.com/en/desktop/contr
 Images are all my own.
 
 #### Other
-
+None
 
 
 ### Content
 
-
+None
 
 ### Colours
 
@@ -354,6 +347,7 @@ I referred to the following to add to my knowledge and for help.
 - [Bootstrap documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - Code Institute course material, 
 - [w3schools.com](https://www.w3schools.com)
+
 
 
 [Back to table of contents](#table-of-contents)
